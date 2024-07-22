@@ -22,9 +22,10 @@ async function Footer() {
 
     return (
         <footer
-            className="pt-10"
+            className="pt-10  bg-no-repeat bg-cover"
             style={{
                 backgroundImage: `url(${FooterBgImage})`,
+                backgroundSize: "100%",
             }}
         >
             <div className="custom-container text-white flex justify-between pb-5">

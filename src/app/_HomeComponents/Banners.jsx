@@ -38,9 +38,10 @@ function Banners({ homepageData }) {
             {homepageData?.banners?.map((homePageBannersData, index) => (
                 <section
                     key={index} //using index as key since data is static across user journey
-                    className="h-full w-full flex items-center relative"
+                    className="h-full w-full flex items-center relative bg-no-repeat bg-cover"
                     style={{
                         backgroundImage: `url(${homePageBannersData.bannerImage.node.sourceUrl})`,
+                        backgroundSize: '100%',
                         transform: `translateY(-${activeStep * 100}%)`,
                         transition: "all 0.5s ease-in-out",
                     }}
